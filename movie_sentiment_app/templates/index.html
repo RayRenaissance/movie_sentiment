@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Sentiment Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1> Movie Sentiment Classifier</h1>
+
+    <form method="POST">
+        <textarea name="review" rows="5" cols="60" placeholder="Enter your movie review here..."></textarea><br><br>
+        <button type="submit">Predict Sentiment</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
